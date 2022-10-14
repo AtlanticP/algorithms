@@ -4,11 +4,11 @@ import random
 from typing import Optional
 
 
-def get_random_list(n: int=5, seed: Optional[int]=None) -> list[int]:
+def get_random_list(n: int=5, SEED: Optional[int]=None) -> list[int]:
     ''' n - length of the list'''
     
     if seed:
-        random.seed(32)    
+        random.seed(SEED)    
     
     a = random.sample(range(1, N*10), n)
     
